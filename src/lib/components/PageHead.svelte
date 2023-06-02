@@ -1,9 +1,9 @@
 <script lang="ts">
-	export let title: string;
-	export let description: string;
+	export let title: string
+	export let description: string
 
-	const siteTitle = 'SvelteKit + MDsveX Blog';
-	const formattedTitle = title ? `${title} | ${siteTitle}` : siteTitle;
+	const siteTitle = `James Joy's Blog`
+	const formattedTitle = title ? `${title} | ${siteTitle}` : siteTitle
 </script>
 
 <svelte:head>

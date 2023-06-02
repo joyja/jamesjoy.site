@@ -1,8 +1,8 @@
 <script lang="ts">
-	export let author: string;
-	export let date: string;
+	export let author: string
+	export let date: string
 
-	const formattedDate = new Date(date).toDateString();
+	const formattedDate = new Date(date).toDateString()
 </script>
 
 <p>
