@@ -70,6 +70,7 @@
 	}
 
 	main {
+		position: relative;
 		flex-grow: 1;
 	}
 
