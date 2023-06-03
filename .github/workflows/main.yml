@@ -7,7 +7,7 @@ on:
       - 'static/**'
 jobs:
   build:
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout master
       uses: actions/checkout@main
