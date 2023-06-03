@@ -26,6 +26,6 @@ jobs:
     - name: Save DigitalOcean kubeconfig with short-lived credentials
       run: doctl kubernetes cluster kubeconfig save --expiry-seconds 600 jar-k8s
     - name: Deploy to DigitalOcean Kubernetes
-      run: kubectl apply -f $GITHUB_WORKSPACE/deployment.yml
+      run: kubectl apply -f $GITHUB_WORKSPACE/k8s/deployment.yml
     - name: Verify deployment
       run: kubectl rollout status deployment/jamesjoy-site
