@@ -13,7 +13,7 @@
 
 <footer>
 	<p>
-		Copyright &#169; <a href="https://twitter.com/mehdi_vasigh">James A. Joy</a>, {new Date().getFullYear()}
+		Copyright &#169; <a href="https://github.com/joyja">James A. Joy</a>, {new Date().getFullYear()}
 	</p>
 </footer>
 

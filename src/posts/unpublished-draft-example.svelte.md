@@ -7,6 +7,10 @@ updated: '2023-06-02'
 published: false
 ---
 
+<script>
+  import Counter from '$lib/components/Counter.svelte'
+</script>
+
 ## Link to other page
 
 [A second blog post](/posts/a-second-post)
