@@ -29,4 +29,4 @@ jobs:
     - name: Deploy to DigitalOcean Kubernetes
       run: kubectl apply -f $GITHUB_WORKSPACE/k8s/deployment.yml
     - name: Verify deployment
-      run: kubectl rollout status deployment/jamesjoy-site -n jamesjoy.site
+      run: kubectl rollout status deployment/jamesjoy-site -n jamesjoy-site
