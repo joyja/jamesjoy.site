@@ -16,7 +16,9 @@
 	.errorCode {
 		font-size: 8rem;
 	}
-
+	.fakeclass {
+		font-size: 2rem;
+	}
 	.errorMessage {
 		font-size: 1rem;
 	}
