@@ -17,7 +17,7 @@
 {#each data.posts as { slug, title, author, description, date }}
 	<Article>
 		<ArticleTitle {slug} {title} />
-		<ArticleMeta {author} {date} />
+		<ArticleMeta {date} />
 		<ArticleDescription {description} {slug} />
 	</Article>
 {/each}

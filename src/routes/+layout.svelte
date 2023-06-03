@@ -30,7 +30,6 @@
 	:global(body) {
 		margin: 0 auto;
 		max-width: 75ch;
-		padding: calc(var(--spacing-unit) * 8);
 		font-family: 'Open Sans';
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
@@ -58,6 +57,7 @@
 	}
 
 	header {
+		padding-top: calc(var(--spacing-unit) * 8);
 		display: flex;
 		align-items: center;
 		overflow: hidden;
