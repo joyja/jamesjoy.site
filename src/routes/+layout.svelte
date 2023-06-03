@@ -1,10 +1,13 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import '@fontsource/kelly-slab'
+	import '@fontsource/open-sans'
+	import "../css/index.scss"
+	import { page } from '$app/stores'
 </script>
 
 <header>
 	<img src="https://github.com/joyja.png" alt="James' face">
-	<a href="/"><h1 class:small={$page.url.pathname !== '/'}>James Joy's Blog</h1></a>
+	<a href="/"><h1 class:small={$page.url.pathname !== '/'}>James Joy's Site</h1></a>
 </header>
 
 <main>
@@ -19,7 +22,6 @@
 
 <style lang="scss">
 	:global(:root) {
-		--spacing-unit: 4px;
 		--color-background: white;
 		--color-text-primary: #212121;
 		--color-text-secondary: #5a5a5a;
@@ -28,16 +30,17 @@
 	:global(body) {
 		margin: 0 auto;
 		max-width: 75ch;
-		// padding: calc(var(--spacing-unit) * 8);
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-			'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+		padding: calc(var(--spacing-unit) * 8);
+		font-family: 'Open Sans';
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 
 		background-color: var(--color-background);
 		color: var(--color-text-primary);
-		line-height: 1.51;
-		font-size: 18px;
+	}
+
+	:global(h1, h2, h3, h4, h5, h6) {
+		font-family: 'Kelly Slab', sans-serif
 	}
 
 	:global(a, a:visited, a:active) {

@@ -12,7 +12,7 @@
 
 <PageHead title="Home" description="An awesome blog about development with Svelte" />
 
-<p>Industrial Automation SME | Professional Electrical Engineer | Developer | 3D Printing Guy</p>
+<p class="subheader">Industrial Automation SME | Professional Electrical Engineer | Developer | 3D Printing Guy</p>
 
 {#each data.posts as { slug, title, author, description, date }}
 	<Article>
@@ -23,3 +23,9 @@
 {/each}
 
 <slot />
+
+<style lang="scss">
+.subheader {
+	padding-bottom: calc(var(--spacing-unit) * 8);
+}
+</style>
