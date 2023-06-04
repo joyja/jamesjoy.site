@@ -19,7 +19,7 @@
 <svelte:component this={component} />
 
 <style>
-	:global(main > p > img, main > p > a > img) {
+	:global(main > div > p > img, main > p > a > img) {
 		overflow: hidden;
 		border-radius: var(--rounded-md);
 		max-width: 100%;

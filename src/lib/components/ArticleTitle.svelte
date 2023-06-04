@@ -35,7 +35,6 @@
 	}
 
 	.large {
-		margin-top: calc(var(--spacing-unit) * 12);
 		font-size: 2.2rem;
 	}
 </style>

@@ -3,15 +3,26 @@
 	import '@fontsource/open-sans'
 	import "../css/index.scss"
 	import { page } from '$app/stores'
+	import PageTransition from '$lib/components/PageTransition.svelte'
+	import { fly } from 'svelte/transition';
+	/** @type {import('./$types').LayoutData} */
+	export let data
 </script>
 
 <header>
-	<img src="https://github.com/joyja.png" alt="James' face">
-	<a href="/"><h1 class:small={$page.url.pathname !== '/'}>James Joy's Site</h1></a>
+	<div class="title">
+		<img src="https://github.com/joyja.png" alt="James' face">
+		<a href="/"><h1 class:small={$page.url.pathname !== '/'}>James Joy's Site</h1></a>
+	</div>
+	{#if $page.url.pathname === '/' }
+		<p in:fly={{ y: -10, duration: 300, delay: 300 }} out:fly={{ y: -10, duration: 300 }} class="subheader">Industrial Automation SME | Professional Electrical Engineer | Developer | 3D Printing Guy</p>
+	{/if}
 </header>
 
 <main>
-	<slot />
+	<PageTransition pathname={data.pathname}>
+		<slot />
+	</PageTransition>
 </main>
 
 <footer>
@@ -59,6 +70,10 @@
 	}
 
 	header {
+		padding-bottom: calc(	var(--spacing-unit) * 8);
+	}
+
+	.title {
 		padding-top: calc(var(--spacing-unit) * 8);
 		display: flex;
 		align-items: center;
@@ -68,6 +83,9 @@
 			height: 60px;
 			width: 60px;
 			margin-right: calc(var(--spacing-unit) * 3);
+		}
+		& > a > h1 {
+			transition: all .3s ease-out;
 		}
 	}
 
