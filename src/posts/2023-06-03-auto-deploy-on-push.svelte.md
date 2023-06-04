@@ -17,5 +17,5 @@ I followed that and after a few failed deploys due to my own mistakes, this blog
 
 If you want to use Digital Ocean click the badge below for $200 in credits, and it helps out with my bills too:
 
-[![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg)](https://www.digitalocean.com/?refcode=7eb43ff4819d&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
+<p style="text-align: center;"><a href="https://www.digitalocean.com/?refcode=7eb43ff4819d&amp;utm_campaign=Referral_Invite&amp;utm_medium=Referral_Program&amp;utm_source=badge" rel="nofollow"><img src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge"></a></p>
 
