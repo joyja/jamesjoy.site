@@ -16,6 +16,7 @@
 <style>
 	p {
 		display: flex;
+		justify-content: space-between;
 		margin: 0;
 	}
 </style>
