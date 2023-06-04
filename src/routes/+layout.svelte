@@ -12,7 +12,7 @@
 <header>
 	<div class="title">
 		<img src="https://github.com/joyja.png" alt="James' face">
-		<a href="/"><h1 class:small={$page.url.pathname !== '/'}>James Joy's Site</h1></a>
+		<a href="/"><div class:small={$page.url.pathname !== '/'} class:large={$page.url.pathname === '/'}>James Joy's Site</div></a>
 	</div>
 	{#if $page.url.pathname === '/' }
 		<p in:fly={{ y: -10, duration: 300, delay: 300 }} out:fly={{ y: -10, duration: 300 }} class="subheader">Industrial Automation SME | Professional Electrical Engineer | Developer | 3D Printing Guy</p>
@@ -66,11 +66,17 @@
 	}
 
 	.small {
-		font-size: 1.6rem;
+		font-size: var(--text-2xl);
+		line-height: var(--text-2xl-lh) !important;
+	}
+
+	.large {
+		font-size: var(--text-3xl);
+		line-height: var(--text-3xl-lh);
 	}
 
 	header {
-		padding-bottom: calc(	var(--spacing-unit) * 8);
+		position: absolute;
 	}
 
 	.title {
@@ -84,12 +90,14 @@
 			width: 60px;
 			margin-right: calc(var(--spacing-unit) * 3);
 		}
-		& > a > h1 {
+		& > a > div {
 			transition: all .3s ease-out;
+			font-family: 'Kelly Slab', sans-serif;
 		}
 	}
 
 	main {
+		padding-top: 12rem;
 		position: relative;
 		flex-grow: 1;
 	}
