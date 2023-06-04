@@ -17,3 +17,9 @@
 <ArticleMeta date={data.frontmatter.date} />
 
 <svelte:component this={component} />
+
+<style>
+	:global(img) {
+		max-width: 100%;
+	}
+</style>

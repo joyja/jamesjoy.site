@@ -36,6 +36,8 @@
 
 		background-color: var(--color-background);
 		color: var(--color-text-primary);
+		padding-left: calc(var(--spacing-unit)*3);
+		padding-right: calc(var(--spacing-unit)*3);
 	}
 
 	:global(h1, h2, h3, h4, h5, h6) {
