@@ -1,6 +1,6 @@
 ---
 title: "Forging Ahead"
-description: "Let's write stuff down"
+description: "Let's write stuff down."
 author: 'James A. Joy'
 date: '2023-06-02'
 updated: '2023-06-02'

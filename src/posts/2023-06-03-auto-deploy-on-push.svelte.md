@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes Auto Deploy"
-description: "Automatically deploying to k8s on push with Github Actions"
+description: "Automatically deploying to k8s on push with Github Actions."
 author: 'James A. Joy'
 date: '2023-06-03'
 updated: '2023-06-03'

@@ -19,9 +19,9 @@
 <svelte:component this={component} />
 
 <style>
-	:global(main > p > img) {
-		text-align: center;
-		max-width: 100%;
+	:global(main > p > img, main > p > a > img) {
+		overflow: hidden;
 		border-radius: var(--rounded-md);
+		max-width: 100%;
 	}
 </style>
