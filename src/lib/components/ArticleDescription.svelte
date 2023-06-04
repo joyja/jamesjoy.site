@@ -15,6 +15,7 @@
 
 <style>
 	p {
+		display: flex;
 		margin: 0;
 	}
 </style>
