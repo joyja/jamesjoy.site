@@ -21,9 +21,3 @@
 {/each}
 
 <slot />
-
-<style lang="scss">
-.subheader {
-	padding-bottom: calc(var(--spacing-unit) * 8);
-}
-</style>

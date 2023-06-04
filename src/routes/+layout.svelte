@@ -15,7 +15,7 @@
 		<a href="/"><div class:small={$page.url.pathname !== '/'} class:large={$page.url.pathname === '/'}>James Joy's Site</div></a>
 	</div>
 	{#if $page.url.pathname === '/' }
-		<p in:fly={{ y: -10, duration: 300, delay: 300 }} out:fly={{ y: -10, duration: 300 }} class="subheader">Industrial Automation SME | Professional Electrical Engineer | Developer | 3D Printing Guy</p>
+		<p in:fly={{ y: -10, duration: 500, delay: 500 }} out:fly={{ y: -10, duration: 500 }} class="subheader">Industrial Automation SME | Professional Electrical Engineer | Developer | 3D Printing Guy</p>
 	{/if}
 </header>
 
@@ -76,6 +76,7 @@
 	}
 
 	header {
+		z-index: 2;
 		position: absolute;
 	}
 
@@ -97,8 +98,8 @@
 	}
 
 	main {
-		padding-top: 12rem;
-		position: relative;
+		// padding-top: 12rem;
+		// position: relative;
 		flex-grow: 1;
 	}
 

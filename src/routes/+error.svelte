@@ -1,7 +1,7 @@
 <div class="page">
-	<h2>
+	<h1>
 		<span class="errorCode">404</span>
-	</h2>
+	</h1>
 	<p class="errorMessage">Page Not Found</p>
 </div>
 
@@ -14,7 +14,7 @@
 		position: absolute;
 		height: 100%;
 		width: 100%;
-		& > h2 {
+		& > h1 {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
