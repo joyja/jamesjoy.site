@@ -1,7 +1,8 @@
-import type { PageServerLoad } from './$types';
-import { slugFromPath } from '$lib/slugFromPath';
+import type { PageServerLoad } from './$types'
+import { slugFromPath } from '$lib/slugFromPath'
 
-const MAX_POSTS = 20;
+export const prerender = false
+const MAX_POSTS = 20
 
 export const load: PageServerLoad = async ({ url }) => {
 	/** @type {import('./$types').PageLoad} */
@@ -16,6 +17,8 @@ export const load: PageServerLoad = async ({ url }) => {
 				} as App.BlogPost)
 		)
 	);
+	
+	console.log(url.searchParams)
 
 	const posts = await Promise.all(postPromises);
 	const publishedPosts = posts.filter((post) => post.published).slice(0, MAX_POSTS);
