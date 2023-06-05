@@ -17,8 +17,6 @@ export const load: PageServerLoad = async ({ url }) => {
 		)
 	);
 
-	console.log(url.searchParams.get('page'));
-
 	const posts = await Promise.all(postPromises);
 	const publishedPosts = posts.filter((post) => post.published).slice(0, MAX_POSTS);
 
