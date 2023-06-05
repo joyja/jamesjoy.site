@@ -4,6 +4,7 @@ import { slugFromPath } from '$lib/slugFromPath';
 const MAX_POSTS = 20;
 
 export const load: PageServerLoad = async ({ url }) => {
+	/** @type {import('./$types').PageLoad} */
 	const modules = import.meta.glob(`/src/posts/*.{md,svx,svelte.md}`);
 
 	const postPromises = Object.entries(modules).map(([path, resolver]) =>
@@ -15,6 +16,8 @@ export const load: PageServerLoad = async ({ url }) => {
 				} as App.BlogPost)
 		)
 	);
+
+	console.log(url.searchParams.get('page'));
 
 	const posts = await Promise.all(postPromises);
 	const publishedPosts = posts.filter((post) => post.published).slice(0, MAX_POSTS);

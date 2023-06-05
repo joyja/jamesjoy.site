@@ -19,11 +19,9 @@
 	{/if}
 </header>
 
-<main>
-	<PageTransition pathname={data.pathname}>
-		<slot />
-	</PageTransition>
-</main>
+<PageTransition pathname={data.pathname}>
+	<slot />
+</PageTransition>
 
 <footer>
 	<p>
@@ -95,12 +93,6 @@
 			transition: all .3s ease-out;
 			font-family: 'Kelly Slab', sans-serif;
 		}
-	}
-
-	main {
-		// padding-top: 12rem;
-		// position: relative;
-		flex-grow: 1;
 	}
 
 	footer {
