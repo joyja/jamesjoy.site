@@ -1,8 +1,8 @@
 import type { PageServerLoad } from './$types'
 import { slugFromPath } from '$lib/slugFromPath'
+import { redirect } from '@sveltejs/kit';
 
-export const prerender = false
-const MAX_POSTS = 20
+const MAX_POSTS = 10
 
 export const load: PageServerLoad = async ({ url }) => {
 	/** @type {import('./$types').PageLoad} */
@@ -18,12 +18,16 @@ export const load: PageServerLoad = async ({ url }) => {
 		)
 	);
 	
-	console.log(url.searchParams)
-
+	const page = url.searchParams.get('page') ? parseInt(url.searchParams.get('page') as string) : 1
+	
 	const posts = await Promise.all(postPromises);
-	const publishedPosts = posts.filter((post) => post.published).slice(0, MAX_POSTS);
+	const publishedPosts = posts.filter((post) => post.published);
+	const pages = Math.ceil(publishedPosts.length / MAX_POSTS)
+	if (page > pages) {
+		throw redirect(307,`/?page=${pages}`)
+	}
 
 	publishedPosts.sort((a, b) => (new Date(a.date) > new Date(b.date) ? -1 : 1));
 
-	return { posts: publishedPosts };
+	return { posts: publishedPosts.slice(MAX_POSTS * (page - 1), MAX_POSTS * (page - 1) + MAX_POSTS), pages };
 };
