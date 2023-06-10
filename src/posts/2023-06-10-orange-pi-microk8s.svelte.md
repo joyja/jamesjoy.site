@@ -1,6 +1,6 @@
 ---
 title: "Hyperconverged with Microk8s and Ceph"
-description: "Rebuilding my Microk8s/Ceph Cluster"
+description: "Part 1 of Many: Rebuilding my Microk8s/Ceph Cluster"
 author: 'James A. Joy'
 date: '2023-06-10'
 updated: '2023-06-10'
