@@ -4,13 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  '@fontsource/open-sans':
-    specifier: ^5.0.2
-    version: 5.0.2
-
 devDependencies:
   '@fontsource/kelly-slab':
+    specifier: ^5.0.2
+    version: 5.0.2
+  '@fontsource/open-sans':
     specifier: ^5.0.2
     version: 5.0.2
   '@playwright/test':
@@ -314,7 +312,7 @@ packages:
 
   /@fontsource/open-sans@5.0.2:
     resolution: {integrity: sha512-iR4bQD0aEztyCQ0WWzlcte0al6YeNOg0qvvy+NMIMx72Hes+OV+lerL2eJHxaBB7dviNYwP3igz180K4Dts1Cg==}
-    dev: false
+    dev: true
 
   /@humanwhocodes/config-array@0.11.8:
     resolution: {integrity: sha512-UybHIJzJnR5Qc/MsD9Kr+RpO2h+/P1GhOwdiLPXK5TWk5sgTdu88bTD9UP+CKbPPh5Rni1u0GjAdYQLemG8g+g==}
