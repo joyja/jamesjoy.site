@@ -22,7 +22,7 @@
 		box-shadow: var(--shadow-md);
 		transition: transform .3s ease-out;
 	}
-	article:hover {
+	article:hover, article:active {
 		transform: scale(1.05);
 	}
 	.read-more {
@@ -43,7 +43,7 @@
 			padding-right: calc(var(--spacing-unit) * 3);
 		}
 	}
-	.read-more:hover {
+	.read-more:hover, .read-more:active {
 		opacity: 1;
 	}
 </style>
