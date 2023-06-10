@@ -7,10 +7,6 @@
 
 <p>
 	{description}
-
-	{#if slug}
-		<a {href}>Read More &rarr;</a>
-	{/if}
 </p>
 
 <style>
