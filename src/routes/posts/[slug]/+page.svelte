@@ -24,4 +24,7 @@
 		border-radius: var(--rounded-md);
 		max-width: 100%;
 	}
+	:global(pre) {
+		border-radius: var(--rounded-md);
+	}
 </style>
