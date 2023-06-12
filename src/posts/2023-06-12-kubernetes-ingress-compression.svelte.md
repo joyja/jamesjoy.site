@@ -17,6 +17,7 @@ kubectl get configmap ingress-nginx-controller -n ingress-nginx -o yaml
 ``` 
 
 <br />
+
 Edit the file to add **`use-gzip: "true"`** and **`enable-brotli: "true"`**: 
 
 ```yaml
