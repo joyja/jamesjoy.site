@@ -11,10 +11,10 @@ I have an awesome local MicroK8s/Ceph cluster that I use for many tasks on my lo
 
 Right now, I'm using Compulab Fitlet 2 nodes, and they've been great, but they are a little less than $200 each. The shipping from Israel is pricey, and their availability has gotten far worse with the supply chain crisis. The Orange Pi 5 is $140 per node with free shipping from Amazon, though I'm giving up the Dual NICs, and I'll be switching to an ARM processor from Compulab's Intel Atom.
 
-![Three Orange Pi 5 Single Board Computers](https://res.cloudinary.com/jarautomation/image/upload/f_auto,q_auto/v1686537193/jamesjoy.site/Orange_Pi_5s.jpg)
+![Three Orange Pi 5 Single Board Computers](https://res.cloudinary.com/jarautomation/image/upload/f_auto,q_auto,w_700/v1686537193/jamesjoy.site/Orange_Pi_5s.jpg)
 
 The Orange Pi is smaller in general though, and it will be fun to try out 3D-printed cases and probably design my own in the end. I already printed the first one I'll try using white ASA filament. I picked it because it was the most popular one on printables. It came out pretty good.
 
-![Orange Pi 5 with 3D-printed case](https://res.cloudinary.com/jarautomation/image/upload/f_auto,q_auto/v1686537193/jamesjoy.site/Orange_Pi_5_with_3D_Printed_Case.jpg)
+![Orange Pi 5 with 3D-printed case](https://res.cloudinary.com/jarautomation/image/upload/f_auto,q_auto,w_700/v1686537193/jamesjoy.site/Orange_Pi_5_with_3D_Printed_Case.jpg)
 
 I'm going to document my process of building this over a few posts, which gives me a great opportunity to add a series feature to the site so visitors can binge-read them easily.

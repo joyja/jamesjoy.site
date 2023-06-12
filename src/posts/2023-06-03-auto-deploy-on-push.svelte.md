@@ -11,7 +11,7 @@ I used this blog as an excuse to play with automatically deploying to Kubernetes
 
 I followed that and after a few failed deploys due to my own mistakes, this blog is up and updated everytime I push to my main branch on Github!
 
-![Github Actions Successful Deploy Checklist](https://res.cloudinary.com/jarautomation/image/upload/f_auto,q_auto/v1686537189/jamesjoy.site/successful_deploy.png)
+![Github Actions Successful Deploy Checklist](https://res.cloudinary.com/jarautomation/image/upload/f_auto,q_auto,w_700/v1686537189/jamesjoy.site/successful_deploy.png)
 
 [The repo for this site](https://github.com/joyja/jamesjoy.site) is public too, so feel free to peruse on Github.
 
