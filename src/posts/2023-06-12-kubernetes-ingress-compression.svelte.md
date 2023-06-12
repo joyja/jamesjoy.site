@@ -41,6 +41,6 @@ Apply the configuration change:
 kubectl apply -f configmap-ingress-nginx-controller.yml
 ```
 
-Bingo Bango! We have compression happening when I look at the Network tab in Chrom devtools:
+Bingo Bango! We have compression happening when I look at the Network tab in Chrome Devtools:
 
 ![Compression as shown in devtools network tab](https://res.cloudinary.com/jarautomation/image/upload/f_auto,q_auto/v1686554780/jamesjoy.site/Compression.png)
