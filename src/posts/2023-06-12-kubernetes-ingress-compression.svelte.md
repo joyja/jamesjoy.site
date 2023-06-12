@@ -10,6 +10,7 @@ published: true
 I ran a few tests on this site with Lighthouse and realized that I hadn't enabled text compression, so I looked into how to do that on the ingress-nginx controller I'm using for the Kubernetes environment that's serving this to you. It was super simple I just had to add some settings to the ConfigMap for the ingress controller.
 
 <br />
+
 Use the following to get a copy of the existing controller configuration:
 
 ```bash
@@ -33,6 +34,7 @@ metadata:
   namespace: ingress-nginx
 ```
 <br />
+
 Apply the configuration change:
 
 ```bash
