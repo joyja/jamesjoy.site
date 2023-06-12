@@ -68,17 +68,3 @@ p {
   @extend .text-md;
   margin-bottom: calc(var(--spacing-unit) * 3);
 }
-
-@font-face {
-  font-family: 'Open Sans';
-  src: local('Open Sans')
-    format('woff2');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Kelly Slab';
-  src: local('Kelly Slab')
-    format('woff2');
-  font-display: swap;
-}

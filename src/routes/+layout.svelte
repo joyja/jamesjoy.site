@@ -39,7 +39,7 @@
 	:global(body) {
 		margin: 0 auto;
 		max-width: 75ch;
-		font-family: 'Open Sans';
+		font-family: 'Open Sans', sans-serif;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 
