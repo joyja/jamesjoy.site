@@ -1,5 +1,5 @@
 ---
-title: "Hyperconverged with Microk8s and Ceph"
+title: "Hyperconverged with Microk8s and Ceph 1"
 description: "Part 1 of Many: Building a Microk8s/Ceph Cluster"
 author: 'James A. Joy'
 date: '2023-06-10'
