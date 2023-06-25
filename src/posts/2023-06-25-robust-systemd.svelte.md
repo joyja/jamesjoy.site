@@ -42,7 +42,7 @@ WantedBy=multi-user.target
 
 I have `Restart=always` so what gives? Well after some googling I found [this StackExchange question](https://unix.stackexchange.com/questions/289629/systemd-restart-always-is-not-honored). Specifically looking at the comments of the accepted answer. For this scenario setting `StartLimitIntervalSec=0` seems to have done the trick so far. 
 
-**WARNING:** *I don't think this is the right solution for every software you are trying to Daemonize, but I think it's just what i needed to make sure I never lose remote access*
+**WARNING:** *I don't think this is the right solution for every software you are trying to Daemonize, but it's just what i needed to make sure I never lose remote access*
 
 So the new config file looked like this:
 
@@ -52,6 +52,7 @@ Description=nebula
 Wants=basic.target
 After=basic.target network-online.target
 Before=sshd.service
+StartLimitIntervalSec=0
 
 [Service]
 SyslogIdentifier=nebula
@@ -59,7 +60,6 @@ ExecReload=/bin/kill -HUP $MAINPID
 ExecStart=/usr/local/bin/nebula -config /etc/nebula/config.yml
 Restart=always
 RestartSec=10
-StartLimitIntervalSec=0
 
 [Install]
 WantedBy=multi-user.target
