@@ -40,7 +40,7 @@ RestartSec=10
 WantedBy=multi-user.target
 ```
 
-I have `Restart=always` so what gives? Well after some googling I found (this StackExchange question)[https://unix.stackexchange.com/questions/289629/systemd-restart-always-is-not-honored]. Specifically looking at the comments of the accepted answer. For this scenario setting `StartLimitIntervalSec=0` seems to have done the trick so far. 
+I have `Restart=always` so what gives? Well after some googling I found [this StackExchange question](https://unix.stackexchange.com/questions/289629/systemd-restart-always-is-not-honored). Specifically looking at the comments of the accepted answer. For this scenario setting `StartLimitIntervalSec=0` seems to have done the trick so far. 
 
 **WARNING:** *I don't think this is the right solution for every software you are trying to Daemonize, but I think it's just what i needed to make sure I never lose remote access*
 
