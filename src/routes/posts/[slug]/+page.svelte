@@ -1,15 +1,25 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import type { PageData } from './$types';
 	import type { SvelteComponentTyped } from 'svelte/internal';
+	import { mermaidRendered } from '$lib/stores';
 
 	import PageHead from '$lib/components/PageHead.svelte';
 	import ArticleTitle from '$lib/components/ArticleTitle.svelte';
 	import ArticleMeta from '$lib/components/ArticleMeta.svelte';
+	import mermaid from 'mermaid'
 
 	export let data: PageData;
 
 	type C = $$Generic<typeof SvelteComponentTyped<any, any, any>>;
 	$: component = data.component as unknown as C;
+	mermaid.initialize({ theme: 'neutral', startOnLoad: false })
+	onMount(() => {
+		mermaidRendered.set(true)
+		setTimeout(async () => {
+			await mermaid.run()
+    }, 0)
+	})
 </script>
 
 <PageHead title={data.frontmatter.title} description={data.frontmatter.description} />
@@ -26,5 +36,10 @@
 	}
 	:global(pre) {
 		border-radius: var(--rounded-md);
+	}
+	:global(main > p > code) {
+		border-radius: var(--rounded-sm);
+		padding: var(--spacing-unit);
+		background-color: var(--gray-300);
 	}
 </style>
