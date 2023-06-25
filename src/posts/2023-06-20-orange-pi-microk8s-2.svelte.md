@@ -11,7 +11,7 @@ Now that I have the machines all ready to go with SD Cards and NVMe drives it's 
 
 ![Three Orange Pi 5](https://res.cloudinary.com/jarautomation/image/upload/f_auto,q_auto,w_700/v1687297311/jamesjoy.site/Orange%20Pi%205%20Triplet.jpg)
 
-Pay no mind to the missing power button and terrible shape of the cord on the leftmost Orange Pi 5. I am well aware of the jankiness and it will be fixed in due time. I was just to lazy to fix it for this photo.
+Pay no mind to the missing power button and terrible shape of the cord on the leftmost Orange Pi 5. I am well aware of the jankiness and it will be fixed in due time. I was just too lazy to fix it for this photo.
 
 To get these to boot off of NVME I followed [this Crosstalk Solutions guide](https://www.crosstalksolutions.com/orange-pi-5-simple-overview-and-installation-with-m-2-ssd/) to the letter and it worked perfectly. The only thing I'll add to the guide here is what my performance looked like before and after moving to the NVME:
 <br />
