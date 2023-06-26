@@ -15,6 +15,10 @@
 {/key}
 
 <style lang="scss">
+main {
+	display: flex;
+	flex-direction: column;
+}
 @media (min-width: 0px) {
   .transitor {
 		margin-top: 12rem;
