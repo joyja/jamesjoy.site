@@ -1,12 +1,13 @@
 <script lang="ts">
+	import type { LayoutData } from './$types'
 	import '@fontsource/kelly-slab'
 	import '@fontsource/open-sans'
 	import "../css/index.scss"
 	import { page } from '$app/stores'
 	import PageTransition from '$lib/components/PageTransition.svelte'
 	import { fly } from 'svelte/transition';
-	/** @type {import('./$types').LayoutData} */
-	export let data
+	
+	export let data: LayoutData
 </script>
 
 <header>
