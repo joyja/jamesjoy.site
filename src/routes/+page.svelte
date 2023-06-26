@@ -10,7 +10,7 @@
 	export let data: PageData;
 </script>
 
-<PageHead title="Home" description="An awesome blog about development with Svelte" />
+<PageHead title="Home" description="Industrial Automation SME | Professional Electrical Engineer | Developer | 3D Printing Guy" />
 
 {#each data.posts as { slug, title, author, description, date }}
 	<Article {slug}>

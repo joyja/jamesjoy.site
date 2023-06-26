@@ -15,7 +15,7 @@ So I have a customer site that I connect to using [Nebula](https://github.com/sl
 
 <Mermaid height={ 200 }>
   flowchart TD
-    laptop(Laptop w/ Nebula) -- "Nebula Connection Brokered by a Lighthouse" -->remote(Remote w/ Nebula)
+    laptop(Laptop w/ Nebula) -- "Nebula Connection Brokered by a Lighthouse" --> remote(Remote w/ Nebula)
 </Mermaid>
 
 To ensure that my remote access is always available, it's best to daemonize Nebula using Systemd so that it will restart automatically on reboot and after any other failure. This is exactly what I've done, BUT the remote site Nebula daemon would often just cease to come alive after the server clearly lost power. Granted, this particular site has an unreliable electrical system where power goes out often and the server shuts down, so outages are common, but I needed my remote access to come back when the server came back online and it... wasn't.
