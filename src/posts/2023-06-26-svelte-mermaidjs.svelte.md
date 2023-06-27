@@ -61,7 +61,7 @@ onMount(() => {
 })
 ```
 
-The couple things to note here are that [mdsvex](https://mdsvex.com/) automatically applies the language-mermaid class, and I also use setTimeout here to make sure mermaid doesn't run until after the tick on which mdsvex will do it's render of the markdown. Unforunately, this doesn't work. Mdsvex uses prismjs for syntax highlighting which inserts a bunch `<code>` blocks within the mermaid syntax so instead of a pretty chart I get this:
+The couple things to note here are that [mdsvex](https://mdsvex.com/) automatically applies the language-mermaid class, and I also use `setTimeout` here to make sure mermaid doesn't run until after the tick on which mdsvex will do it's render of the markdown. Unforunately, this doesn't work. Mdsvex uses prismjs for syntax highlighting which inserts a bunch `<code>` blocks within the mermaid syntax so instead of a pretty chart I get this:
 
 <Mermaid height="200">
   <code>flowchart TB</code>
@@ -70,7 +70,7 @@ The couple things to note here are that [mdsvex](https://mdsvex.com/) automatica
 
 ## Let's Make a Component Instead
 
-It's okay though, I also realized that I'd want to show a nice loading widget while the charts render, have the charts fade in nicely when they're ready and be able to set a fixed height for each chart. To acheive that, the best thing to do is to create a Mermaid component. I'd still call my `mermaid.run` function in `posts/[slug]/page.svelte`, but I would use a `Mermaid` component.
+It's okay though, I also realized that I'd want to show a nice loading widget while the charts render, have the charts fade in nicely when they're ready and be able to set a fixed height for each chart. To achieve that, the best thing to do is to create a Mermaid component. I'd still call my `mermaid.run` function in `posts/[slug]/page.svelte`, but I would use a `Mermaid` component.
 
 So first I made a nice indeterminate `Loading.svelte` component:
 
