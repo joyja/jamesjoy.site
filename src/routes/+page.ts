@@ -28,6 +28,7 @@ export const load: PageServerLoad = async ({ url }) => {
 	}
 
 	publishedPosts.sort((a, b) => (new Date(a.date) > new Date(b.date) ? -1 : 1));
-
+	console.log(page)
+	console.log(publishedPosts.slice(MAX_POSTS * (page - 1), MAX_POSTS * (page - 1) + MAX_POSTS))
 	return { posts: publishedPosts.slice(MAX_POSTS * (page - 1), MAX_POSTS * (page - 1) + MAX_POSTS), page, pages };
 };

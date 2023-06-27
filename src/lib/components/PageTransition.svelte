@@ -11,13 +11,15 @@
 		in:fly={{ x: -10, duration: 500, delay: 500 }} out:fly={{ x: 5, duration: 500 }}
 	>
 		<slot />
-</main>
+	</main>
 {/key}
 
 <style lang="scss">
 main {
 	display: flex;
 	flex-direction: column;
+	flex-grow: 1;
+	min-height: 75vh;
 }
 @media (min-width: 0px) {
   .transitor {
@@ -36,12 +38,10 @@ main {
 	}
 }
 .transitor {
-	flex-grow: 1;
 	transition: margin-top .3s ease-out;
 	position: relative;
 }
 .transitorpost {
-	flex-grow: 1;
 	transition: padding-top .3s ease-out;
 	position: relative;
 }

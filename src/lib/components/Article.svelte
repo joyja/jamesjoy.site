@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let slug=``
-	const href = slug && `/posts/${slug}`
+	$: href = slug && `/posts/${slug}`
 </script>
 
 <article>

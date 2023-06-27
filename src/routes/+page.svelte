@@ -6,8 +6,7 @@
 	import ArticleTitle from '$lib/components/ArticleTitle.svelte'
 	import ArticleMeta from '$lib/components/ArticleMeta.svelte'
 	import ArticleDescription from '$lib/components/ArticleDescription.svelte'
-
-	export let data: PageData;
+	export let data: PageData
 </script>
 
 <PageHead title="Home" description="Industrial Automation SME | Professional Electrical Engineer | Developer | 3D Printing Guy" />
@@ -34,7 +33,7 @@
 			<a style:border-top={ page + 1 === data.page ? `solid 2px black` : null } href={`/?page=${page + 1}`}>{ page + 1 }</a>
 		{/each}
 	</div>
-	<a class="pages__next" href={ `/?page=${ data.page < data.pages + 1 ? data.page + 1 : data.page }`}>
+	<a class="pages__next" href={ `/?page=${ data.page < data.pages + 1 ? data.page + 1 : data.page }` }>
 		Next
 		<svg class="pages__next ml-3 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
 			<path fill-rule="evenodd" d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z" clip-rule="evenodd" />
@@ -47,11 +46,10 @@
 	.articles {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		flex-grow: 1;
 		&__list {
 			flex-grow: 1;
 		}
-		flex-grow: 1;
 	}
 	.pages {
 		display: flex;
