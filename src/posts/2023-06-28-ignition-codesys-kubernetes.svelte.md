@@ -69,7 +69,7 @@ kubectl cluster-info
 It should return something like:
 ```bash
 Kubernetes control plane is running at https://{Your Cluster ID}.k8s.ondigitalocean.com
-CoreDNS is running at https://{Yout Cluster ID}.k8s.ondigitalocean.com/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+CoreDNS is running at https://{Your Cluster ID}.k8s.ondigitalocean.com/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
 
 To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 ```
