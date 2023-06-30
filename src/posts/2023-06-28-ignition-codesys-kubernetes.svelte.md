@@ -5,7 +5,7 @@ author: 'James A. Joy'
 date: '2023-06-28'
 updated: '2023-06-28'
 series: 'Ignition/Codesys Cloud Development'
-published: false
+published: true
 ---
 
 Our Ignition Development environment is in the cloud on Kubernetes, which is super convenient so I can work with my team and clients collaboratively on projects. In case anyone is interested in seeting up something like this for themselves, this is how we do it:
