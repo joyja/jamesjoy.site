@@ -44,4 +44,12 @@
 		padding-left: calc(var(--spacing-unit));
 		background-color: var(--gray-300);
 	}
+	:global(main > ul) {
+		list-style: disc;
+		list-style-position: outside;
+		margin-left: calc(var(--spacing-unit) * 5);
+	}
+	:global(main > ul > li) {
+		padding-bottom: calc(var(--spacing-unit) * 3);
+	}
 </style>

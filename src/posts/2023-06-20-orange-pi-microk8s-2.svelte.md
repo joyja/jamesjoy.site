@@ -4,6 +4,7 @@ description: "Part 2: Getting the Orange Pi to Boot from NVME"
 author: 'James A. Joy'
 date: '2023-06-20'
 updated: '2023-06-20'
+series: 'Hyperconverged with Microk8s and Ceph'
 published: true
 ---
 

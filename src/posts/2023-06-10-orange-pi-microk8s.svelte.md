@@ -4,6 +4,7 @@ description: "Part 1 of Many: Building a Microk8s/Ceph Cluster"
 author: 'James A. Joy'
 date: '2023-06-10'
 updated: '2023-06-10'
+series: 'Hyperconverged with Microk8s and Ceph'
 published: true
 ---
 
