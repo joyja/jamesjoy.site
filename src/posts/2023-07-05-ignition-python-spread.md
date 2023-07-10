@@ -7,7 +7,7 @@ updated: '2023-07-05'
 published: true
 ---
 
-Flex repeaters (and other similar components) are already a powerful feature of Inductive Automation's Ignition platform, but often we have to modify the arrays and objects we pass in. To demonstrate, we'll use the example of a simple menu. Our menu will have two components:
+Flex repeaters (and other similar components) are already a powerful feature of Inductive Automation's Ignition platform, but often we have to modify the lists and dictionaries we pass in. To demonstrate, we'll use the example of a simple menu. Our menu will have two components:
 
 1. The `selector` component that will display and act as a button for each menu item.
 2. The `menu` component the will contain a flex repeater, with an instance of `selector` for each menu item.
