@@ -1,18 +1,17 @@
 <script lang="ts">
 	export let description: string
 	export let slug = ''
+	export let center = false
 
 	const href = slug && `/posts/${slug}`
 </script>
 
-<p>
+<p style:text-align={center ? 'center' : 'left'}>
 	{description}
 </p>
 
 <style>
 	p {
-		display: flex;
-		justify-content: space-between;
 		margin: 0;
 	}
 </style>

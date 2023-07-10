@@ -1,10 +1,11 @@
 <script lang="ts">
 	export let date: string
+	export let center = false
 
 	const formattedDate = new Date(date).toDateString()
 </script>
 
-<p>
+<p style:text-align={center ? 'center' : 'left'}>
 	<span class="date">{formattedDate}</span>
 </p>
 

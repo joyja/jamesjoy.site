@@ -1,6 +1,7 @@
 <script lang="ts">
-	export let slug = '';
-	export let title: string;
+	export let slug = ''
+	export let title: string
+	export let center = false
 
 	const id = title
 		.toLowerCase()
@@ -11,13 +12,13 @@
 </script>
 
 {#if slug}
-	<h3 class="heading" class:large={!slug} {id}>
+	<h3 class="heading" class:large={!slug} style:text-align={center ? 'center' : 'left'} {id} >
 		<a {href}>
 			{title}
 		</a>
 	</h3>
 {:else}
-	<h1 class="heading" class:large={!slug} {id}>
+	<h1 class="heading" class:large={!slug} style:text-align={center ? 'center' : 'left'} {id}>
 		<a {href}>
 			{title}
 		</a>
