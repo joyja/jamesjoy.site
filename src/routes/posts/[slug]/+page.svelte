@@ -41,7 +41,7 @@
 		border-radius: var(--rounded-md);
 		margin-bottom: calc(var(--spacing-unit)*5)!important;
 	}
-	:global(main > p > code) {
+	:global(main > p > code), :global(main > ol > li > code), :global(main > ul > li > code) {
 		border-radius: var(--rounded-sm);
 		padding-right: calc(var(--spacing-unit));
 		padding-left: calc(var(--spacing-unit));
