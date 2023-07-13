@@ -23,7 +23,7 @@ and then we decided that we wanted some space between each of the buttons. We'd 
 
 ![Margins on each button](https://res.cloudinary.com/jarautomation/image/upload/w_700,f_auto,q_auto/v1689234447/margins.png)
 
-But having the Advanced Stylesheet resource allows us to do some things we couldn't do with Style Classes, us `:first-child` and the `> *` operator. Taking inspiration from [Tailwind CSS](https://tailwindcss.com/docs/space) we can create a class for the Flex Repeater that will automatically space all of it's children so you only have to apply a class in one place and never think about it again even if you're adding more children.
+But having the Advanced Stylesheet resource allows us to do some things we couldn't do with Style Classes, specifically, use the `:first-child` psuedo-class and the `> *` selector. Taking inspiration from [Tailwind CSS](https://tailwindcss.com/docs/space) we can create a class for the Flex Repeater that will automatically space all of it's children so you only have to apply a class in one place and never think about it again even if you're adding more children.
 
 For example, we can create classes like the following for spacing the buttons vertically, where spacing unit is a css variable we're using for a predefined spacing multiplier:
 
