@@ -25,12 +25,13 @@
 </PageTransition>
 
 <footer>
+	
 	<p>
 		Copyright &#169; <a href="https://github.com/joyja">James A. Joy</a>, {new Date().getFullYear()}
 	</p>
 </footer>
 
-<style lang="scss">
+<style lanQg="scss">
 	:global(:root) {
 		--color-background: white;
 		--color-text-primary: #212121;
