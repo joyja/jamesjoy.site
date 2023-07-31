@@ -91,7 +91,7 @@ My database is PostgreSQL, so I just needed to turn the spreadsheet into 76 CSV 
 
 That's when I realized I needed to write a VBA Excel macro to convert the data from the spreadsheet to the CSV files. This is great, except... I *hate* writing VBA Excel macros, and it's been a long time, so I would need to refresh myself on how to do a lot of the things. This is a huge mental roadblock... I have to spend a lot of time researching things I don't care about learning to do something pretty uninteresting. After I spent some time procrastinating, I thought about using Chat GPT to get me over this hurdle.
 
-So I went to ChatGPT and had [this conversation](https://chat.openai.com/share/f45bf494-2c99-44dc-a359-ea609f37b444) with my robot friend.
+So I went to ChatGPT and had [this conversation](https://chat.openai.com/share/f268638a-c598-4d74-9b21-9c78d0c4d831) with my robot friend.
 
 You can read the whole thing in that link, but here's a summary of what we accomplished together:
 
