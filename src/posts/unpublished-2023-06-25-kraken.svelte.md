@@ -4,7 +4,7 @@ description: "Part 1 of Many: Building a distributed control platform"
 author: 'James A. Joy'
 date: '2023-06-27'
 updated: '2023-06-27'
-published: false
+published: true
 ---
 
 <script>
